@@ -1,0 +1,202 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.page{
+  background: rgb(40, 40, 40);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.heading {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading h4 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.heading h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, #4299e1, #667eea);
+}
+
+
+.boxContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  
+  width: 100%;
+  height: 25%;
+  
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  color: white;
+  font-size: x-large;
+  border-radius: 12px;
+  cursor: pointer;
+  
+}
+
+.box0{
+  background-color: rgb(59, 57, 57);
+}
+.box1{
+  background-color: rgb(53, 47, 47);
+}
+.box2{
+  background-color: rgb(65, 55, 55);
+}
+.box3{
+  background-color: rgb(66, 49, 49);
+}
+.inputBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+
+.inputBox input {
+  width: 20%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 12px;
+  background-color: burlywood;
+  color: black
+}
+
+
+/* Buttons Container */
+.inputBox button {
+  /* width: 100%; */
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Reset Button (Red) */
+.inputBox button:nth-child(2) {
+  background: #ff4b5c;
+  color: white;
+}
+
+.inputBox button:nth-child(2):hover {
+  background: #e63b4a;
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+/* Checkout Button (Green) */
+.inputBox button:nth-child(3) {
+  background: #28a745;
+  color: white;
+}
+
+.inputBox button:nth-child(3):hover {
+  background: #218838;
+  box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.4);
+}
+
+
+/* .price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin-top: 32px;
+  font-size: xx-large;
+  color: white;
+  border: 2px solid red;
+} */
+
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  min-width: 200px; /* Ensures it doesn't become too small */
+  height: 75px; /* Keeps it a neat rectangular box */
+  margin-top: 32px;
+  font-size: xx-large;
+  color: white;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient effect */
+  border: 2px solid red;
+  border-radius: 15px; /* Smooth rounded corners */
+  box-shadow: 0px 8px 20px rgba(255, 69, 0, 0.4); /* Beautiful soft shadow */
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* .price:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 12px 30px rgba(255, 69, 0, 0.6);
+} */
+
+.addProductContainer{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 12px;
+}
+.addprodctbtn{
+  padding: 12px;
+  font-size: 18px;
+  background: #28a745;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
