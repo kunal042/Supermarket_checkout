@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from django.http import JsonResponse
-from .services import calculate_total, Cart
+from .cart import calculate_total
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
